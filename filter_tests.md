@@ -24,3 +24,12 @@ sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -s 192.168.20.0/24 -j DROP
 sudo iptables -A INPUT -s 192.168.10.0/24 -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 80 -j DROP
+
+---
+
+## Empirical Test Execution Log
+
+### Test 1: Permitted Access — Staff Subnet on Port 80 (HTTP)
+* **Command Executed:** 
+  ```bash
+  nc -zv -s 192.168.10.15 192.168.10.100 80
