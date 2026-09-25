@@ -47,7 +47,7 @@ Verdict: PASS (Explicitly allowed by Staff subnet rule).
 ### Test 2: Blocked Access 1 — Guest Subnet Isolation on Port 80
 * **Command Executed:**
 
-nc -zv -w 3 -s 192.168.20.45 192.168.10.100 80
+  nc -zv -w 3 -s 192.168.20.45 192.168.10.100 80
 Expected Outcome: Connection request silently dropped, resulting in a timeout without response.
 
 Actual Output:
@@ -57,7 +57,7 @@ Verdict: PASS (Blocked by -s 192.168.20.0/24 -j DROP rule).
 ### Test 3: Blocked Access 2 — Unauthorized Service Port (SSH Port 22)
 * **Command Executed:**
 
-nc -zv -w 3 -s 192.168.10.15 192.168.10.100 22
+  nc -zv -w 3 -s 192.168.10.15 192.168.10.100 22
 Expected Outcome: Connection attempt blocked by default-deny ingress policy.
 
 Actual Output:
