@@ -48,8 +48,8 @@ Connection to 192.168.10.100 80 port [tcp/http] succeeded!
 Verdict: PASS (Explicitly allowed by Staff subnet rule).
 
 ### Test 2: Blocked Access 1 — Guest Subnet Isolation on Port 80
-* **Command Executed:**
-   ```bash
+* **Command Executed:** 
+  ```bash
   nc -zv -w 3 -s 192.168.20.45 192.168.10.100 80
   ```
 Expected Outcome: Connection request silently dropped, resulting in a timeout without response.
