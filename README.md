@@ -23,3 +23,24 @@ This repository contains the practical security implementation and technical doc
 ├── cryptography_network_security_exam.tex  # Main technical report source (LaTeX format)
 ├── cryptography_network_security_exam.pdf  # Compiled final technical report
 └── README.md                               # Repository documentation and user guide
+```
+
+### 1. Cryptographic Toolkit (`security_toolkit.py`)
+
+Run the Python utility using command-line arguments:
+
+```powershell
+# Display help and available options
+python security_toolkit.py -h
+
+# Encrypt a target file
+python security_toolkit.py --encrypt sample.txt
+
+# Decrypt an encrypted file
+python security_toolkit.py --decrypt sample.txt.enc
+
+# Generate SHA-256 integrity hash
+python security_toolkit.py --hash sample.txt
+
+# Verify file integrity against an expected hash
+python security_toolkit.py --verify sample.txt <EXPECTED_HASH>
