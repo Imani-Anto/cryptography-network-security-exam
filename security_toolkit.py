@@ -2,7 +2,6 @@
 """
 ULK Polytechnic Institute - Security Toolkit
 Module: Cryptography & Network Security (ETTCS801)
-Student ID: 4202670018
 
 Description:
 A command-line utility providing AES symmetric encryption/decryption 
