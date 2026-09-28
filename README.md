@@ -1,9 +1,7 @@
 # Integrated Situation Final Practical Project
 
 **Module:** Cryptography & Network Security (ETTCS801)  
-**Institution:** ULK Polytechnic Institute  
-**Student ID:** 4202670018  
-**Lecturer:** Isaac TUMWINE  
+**Institution:** ULK Polytechnic Institute   
 
 ---
 
