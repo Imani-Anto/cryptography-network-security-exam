@@ -14,8 +14,8 @@ import argparse
 import hashlib
 from cryptography.fernet import Fernet
 
-KEY_FILE = "secret.key"
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+KEY_FILE = os.path.join(BASE_DIR, "secret.key")
 def generate_or_load_key():
     """Generates a new Fernet key or loads an existing key from file."""
     if not os.path.exists(KEY_FILE):
