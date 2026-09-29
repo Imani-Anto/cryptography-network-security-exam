@@ -219,3 +219,29 @@ __marimo__/
 secret.key
 *.enc
 __pycache__/
+
+# ==========================================
+# Cryptography & Exam Specific Rules
+# ==========================================
+
+# Encryption Keys & Secrets (CRITICAL REQUIREMENT)
+secret.key
+*.key
+*.pem
+*.pub
+
+# Local Test Data & Encryption Outputs
+*.enc
+decrypted_*
+sample_student_record*
+
+# LaTeX Auxiliary & Build Files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
